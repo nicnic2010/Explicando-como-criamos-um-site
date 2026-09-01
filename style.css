@@ -1,1 +1,610 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8fc;
+    color: #35283d;
+    line-height: 1.6;
+}
+
+
+section {
+    padding: 75px 20px;
+}
+
+
+h2 {
+    text-align: center;
+    color: #73318d;
+    font-size: clamp(32px, 6vw, 52px);
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    color: #6c2e85;
+}
+
+
+.texto-central {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* ========================================
+   CAPA
+======================================== */
+
+.inicio {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 194, 230, 0.8),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 80% 75%,
+            rgba(142, 229, 255, 0.8),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            135deg,
+            #6d3192,
+            #d762d4,
+            #50c6df
+        );
+}
+
+
+.inicio-conteudo {
+    max-width: 850px;
+}
+
+
+.icone-principal {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+
+.etiqueta-inicio {
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.inicio h1 {
+    color: white;
+
+    font-size: clamp(45px, 9vw, 78px);
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+.texto-inicio {
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 19px;
+}
+
+
+.botao-principal {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 16px 30px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #71308d;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.botao-principal:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ========================================
+   ETIQUETA
+======================================== */
+
+.etiqueta {
+    display: block;
+
+    width: fit-content;
+
+    margin: 0 auto 15px;
+
+    padding: 7px 16px;
+
+    border-radius: 30px;
+
+    background: #efd9f7;
+
+    color: #71308d;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   CARDS
+======================================== */
+
+.cards {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+
+.card {
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    background: white;
+
+    box-shadow:
+        0 10px 25px
+        rgba(70, 40, 90, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+
+.icone {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+
+/* ========================================
+   SEÇÕES COLORIDAS
+======================================== */
+
+.colorida {
+    background:
+        linear-gradient(
+            135deg,
+            #f3e4ff,
+            #e5f8ff
+        );
+}
+
+
+/* ========================================
+   CARDS DO TUTORIAL
+======================================== */
+
+.tutorial-card {
+    max-width: 850px;
+
+    margin: 25px auto;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background: white;
+
+    box-shadow:
+        0 10px 25px
+        rgba(70, 40, 90, 0.1);
+}
+
+
+.tutorial-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+}
+
+
+.tutorial-card p {
+    margin-top: 10px;
+}
+
+
+.destaque {
+    border: 3px solid #d794e7;
+}
+
+
+/* ========================================
+   CAMINHOS
+======================================== */
+
+.caminho {
+    margin: 20px 0;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3dfff,
+            #def7ff
+        );
+
+    color: #623078;
+}
+
+
+.campo {
+    margin: 15px 0;
+
+    padding: 15px;
+
+    border: 2px solid #c67ada;
+
+    border-radius: 10px;
+
+    color: #777;
+}
+
+
+.botao-exemplo {
+    width: fit-content;
+
+    margin: 15px 0;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    background: #783799;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   CÓDIGOS
+======================================== */
+
+pre {
+    margin: 20px 0;
+
+    padding: 20px;
+
+    overflow-x: auto;
+
+    border-radius: 15px;
+
+    background: #29222f;
+
+    color: #f8eaff;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+code {
+    font-family: monospace;
+}
+
+
+/* ========================================
+   ESTRUTURA DE ARQUIVOS
+======================================== */
+
+.estrutura {
+    max-width: 650px;
+
+    margin: 35px auto;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: #29222f;
+
+    color: #f7eaff;
+
+    font-family: monospace;
+
+    white-space: pre-line;
+
+    line-height: 2;
+}
+
+
+/* ========================================
+   TABELA
+======================================== */
+
+.tabela {
+    max-width: 850px;
+
+    margin: 40px auto;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: white;
+
+    box-shadow:
+        0 10px 25px
+        rgba(70, 40, 90, 0.1);
+}
+
+
+.linha {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    padding: 15px 20px;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.titulo-tabela {
+    background: #783799;
+
+    color: white;
+}
+
+
+/* ========================================
+   EXPLICAÇÃO
+======================================== */
+
+.explicacao {
+    margin-top: 20px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    background: #f4e5fb;
+
+    font-weight: bold;
+
+    color: #67307d;
+}
+
+
+/* ========================================
+   QUIZ
+======================================== */
+
+.quiz-box {
+    max-width: 650px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    background: white;
+
+    box-shadow:
+        0 10px 25px
+        rgba(70, 40, 90, 0.15);
+}
+
+
+.resposta {
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #eed8f7;
+
+    color: #512263;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.resposta:hover {
+    transform: scale(1.02);
+}
+
+
+#resultado {
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   PUBLICAÇÃO
+======================================== */
+
+.publicacao {
+    background:
+        linear-gradient(
+            135deg,
+            #71308d,
+            #ca60ca,
+            #53c7df
+        );
+
+    color: white;
+}
+
+
+.publicacao h2 {
+    color: white;
+}
+
+
+.publicacao .etiqueta {
+    background: white;
+
+    color: #71308d;
+}
+
+
+.publicacao .texto-central {
+    color: white;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background: #2d2234;
+
+    color: white;
+}
+
+
+footer h2 {
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+
+.frase-final {
+    margin-top: 20px;
+
+    color: #eabefa;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 650px) {
+
+    section {
+        padding: 55px 15px;
+    }
+
+
+    .inicio h1 {
+        font-size: 45px;
+    }
+
+
+    .tutorial-card {
+        padding: 22px;
+    }
+
+
+    pre {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+
+    .linha {
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+  }

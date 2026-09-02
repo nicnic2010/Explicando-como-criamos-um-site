@@ -1146,4 +1146,314 @@ JavaScript
 
         <h3>2. Encontrar todos os botões</h3>
 
-   
+   <!-- CONTINUAÇÃO DO JAVASCRIPT -->
+<section class="tutorial">
+    <h2>3. Criar a função no JavaScript</h2>
+
+    <p>
+        Agora precisamos criar uma função para verificar qual resposta foi escolhida.
+        A função é escrita dentro do arquivo <strong>script.js</strong>.
+    </p>
+
+    <div class="codigo">
+<pre>
+function verificarResposta(resposta) {
+
+    if (resposta === "HTML") {
+        alert("Resposta correta!");
+    } else {
+        alert("Resposta incorreta. Tente novamente!");
+    }
+
+}
+</pre>
+    </div>
+
+    <h3>O que cada parte significa?</h3>
+
+    <ul>
+        <li><strong>function</strong>: cria uma função.</li>
+        <li><strong>verificarResposta</strong>: é o nome escolhido para a função.</li>
+        <li><strong>resposta</strong>: recebe a resposta escolhida pelo usuário.</li>
+        <li><strong>if</strong>: verifica se uma condição é verdadeira.</li>
+        <li><strong>alert</strong>: mostra uma mensagem na tela.</li>
+    </ul>
+</section>
+
+
+<section class="tutorial">
+    <h2>4. Conectar os botões ao JavaScript</h2>
+
+    <p>
+        Para que o botão execute uma ação quando for clicado, podemos adicionar
+        o atributo <strong>onclick</strong>.
+    </p>
+
+    <div class="codigo">
+<pre>
+&lt;button onclick="verificarResposta('HTML')"&gt;
+HTML
+&lt;/button&gt;
+</pre>
+    </div>
+
+    <p>
+        Quando a pessoa clicar no botão, o site enviará a palavra
+        <strong>HTML</strong> para a função verificarResposta.
+    </p>
+</section>
+
+
+<section class="tutorial">
+    <h2>5. Conectar o HTML, CSS e JavaScript</h2>
+
+    <p>
+        Para que os três arquivos funcionem juntos, precisamos conectá-los
+        dentro do arquivo <strong>index.html</strong>.
+    </p>
+
+    <h3>Conectando o CSS</h3>
+
+    <p>
+        Dentro da tag <strong>&lt;head&gt;</strong>, colocamos:
+    </p>
+
+    <div class="codigo">
+<pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+</pre>
+    </div>
+
+    <p>
+        Isso faz com que o HTML encontre o arquivo CSS responsável pelas cores,
+        tamanhos, fundos e aparência do site.
+    </p>
+
+
+    <h3>Conectando o JavaScript</h3>
+
+    <p>
+        No final do <strong>body</strong>, colocamos:
+    </p>
+
+    <div class="codigo">
+<pre>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</pre>
+    </div>
+
+    <p>
+        Assim, o HTML consegue encontrar o JavaScript responsável pelas ações
+        e interações do site.
+    </p>
+</section>
+
+
+<section class="tutorial">
+    <h2>📱 Parte 5: Criando os arquivos no GitHub</h2>
+
+    <p>
+        É possível criar e editar um site diretamente pelo celular utilizando
+        o GitHub.
+    </p>
+
+    <h3>1. Entrar no GitHub</h3>
+
+    <p>
+        Primeiro, entre no GitHub utilizando sua conta.
+        Na página inicial, procure o botão de criar um novo repositório.
+    </p>
+
+    <h3>2. Criar um repositório</h3>
+
+    <p>
+        Clique no botão <strong>New</strong> ou no símbolo
+        <strong>+</strong> e escolha <strong>New repository</strong>.
+    </p>
+
+    <p>
+        Escolha um nome para o projeto. Por exemplo:
+    </p>
+
+    <div class="destaque">
+        meu-site
+    </div>
+
+    <p>
+        Depois, deixe o repositório como público e clique em
+        <strong>Create repository</strong>.
+    </p>
+</section>
+
+
+<section class="tutorial">
+    <h2>📁 Parte 6: Criando cada arquivo</h2>
+
+    <p>
+        Dentro do repositório, é necessário criar os arquivos utilizados
+        pelo site.
+    </p>
+
+    <h3>Arquivo 1: index.html</h3>
+
+    <p>
+        Clique em <strong>Add file</strong> e depois em
+        <strong>Create new file</strong>.
+    </p>
+
+    <p>
+        No nome do arquivo, escreva exatamente:
+    </p>
+
+    <div class="destaque">
+        index.html
+    </div>
+
+    <p>
+        Depois, cole o código HTML e clique em
+        <strong>Commit changes</strong>.
+    </p>
+
+
+    <h3>Arquivo 2: style.css</h3>
+
+    <p>
+        Repita o processo e crie um arquivo chamado:
+    </p>
+
+    <div class="destaque">
+        style.css
+    </div>
+
+    <p>
+        Nesse arquivo devem ser colocados todos os códigos responsáveis
+        pela aparência e pelas cores do site.
+    </p>
+
+
+    <h3>Arquivo 3: script.js</h3>
+
+    <p>
+        Crie mais um arquivo com o nome:
+    </p>
+
+    <div class="destaque">
+        script.js
+    </div>
+
+    <p>
+        Nesse arquivo são colocadas as funções e interações do site,
+        como o funcionamento de um quiz.
+    </p>
+</section>
+
+
+<section class="tutorial">
+    <h2>🎥 Parte 7: Adicionando um vídeo</h2>
+
+    <p>
+        Para colocar um vídeo no site, primeiro é necessário enviar o arquivo
+        MP4 para o mesmo repositório.
+    </p>
+
+    <p>
+        Depois de enviar o vídeo, ele pode ser colocado no HTML utilizando
+        a tag <strong>video</strong>.
+    </p>
+
+    <div class="codigo">
+<pre>
+&lt;video controls&gt;
+    &lt;source src="nome-do-video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+</pre>
+    </div>
+
+    <p>
+        A palavra <strong>controls</strong> adiciona os botões para iniciar,
+        pausar e controlar o vídeo.
+    </p>
+</section>
+
+
+<section class="tutorial">
+    <h2>🌐 Parte 8: Publicando o site</h2>
+
+    <p>
+        Depois de terminar todos os arquivos, o site pode ser publicado
+        gratuitamente utilizando o GitHub Pages.
+    </p>
+
+    <h3>Passo 1</h3>
+
+    <p>
+        Entre no repositório do projeto e procure a opção
+        <strong>Settings</strong>.
+    </p>
+
+    <h3>Passo 2</h3>
+
+    <p>
+        Dentro das configurações, procure a seção chamada
+        <strong>Pages</strong>.
+    </p>
+
+    <h3>Passo 3</h3>
+
+    <p>
+        Na opção de publicação, escolha:
+    </p>
+
+    <div class="destaque">
+        Branch: main
+    </div>
+
+    <p>
+        Depois, salve as alterações.
+    </p>
+
+    <p>
+        Após alguns minutos, o GitHub cria um link público para o site.
+        Esse link pode ser compartilhado e aberto tanto no celular quanto
+        no computador.
+    </p>
+</section>
+
+
+<section class="tutorial">
+    <h2>🧠 Resumo: como tudo funciona?</h2>
+
+    <div class="resumo">
+        <p>📄 <strong>HTML:</strong> cria o conteúdo do site.</p>
+
+        <p>🎨 <strong>CSS:</strong> deixa o site bonito, organizado e colorido.</p>
+
+        <p>⚙️ <strong>JavaScript:</strong> cria ações e interações.</p>
+
+        <p>🎥 <strong>MP4:</strong> permite adicionar vídeos.</p>
+
+        <p>🐙 <strong>GitHub:</strong> guarda e publica os arquivos do projeto.</p>
+    </div>
+</section>
+
+
+<section class="final">
+    <h2>✨ Site finalizado!</h2>
+
+    <p>
+        Criar um site pode parecer difícil no começo, mas cada linguagem possui
+        uma função diferente.
+    </p>
+
+    <p>
+        O HTML cria a estrutura, o CSS cria o visual e o JavaScript adiciona
+        interações.
+    </p>
+
+    <p>
+        Depois de conectar todos os arquivos e publicar o projeto no GitHub,
+        o site pode ser acessado por outras pessoas através de um link.
+    </p>
+
+    <h2>🚀 Agora você já conhece o passo a passo para criar um site!</h2>
+</section>
